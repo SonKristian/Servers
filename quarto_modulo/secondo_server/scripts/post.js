@@ -1,4 +1,4 @@
-const axios = require('axios')
+import axios from 'axios'
 
 async function call() {
     const res = await axios.post('http://localhost:3000/case-cinematografiche', {
@@ -6,7 +6,7 @@ async function call() {
         fondazione: 1990,
         stato: "Stati Uniti"
     })
-    console.log(res.status)
+    //console.log(res.status)
 }
 
 call()
